@@ -31,7 +31,7 @@ IMAGE_INSTALL:append = " \
 "
 
 # Kaonic Applications
-IMAGE_INSTALL:append = " kaonic-init kaonic-comm kaonic-factory"
+IMAGE_INSTALL:append = " kaonic-init kaonic-comm kaonic-factory rns-mavlink"
 
 TOOLCHAIN_HOST_TASK += "\
     nativesdk-grpc \
