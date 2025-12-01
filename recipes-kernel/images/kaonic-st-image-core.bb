@@ -13,7 +13,7 @@ IMAGE_FEATURES += "\
     "
 
 # Networking
-IMAGE_INSTALL:append = " hostapd iw dnsmasq"
+IMAGE_INSTALL:append = " hostapd iw dnsmasq rsync"
 IMAGE_INSTALL:append = " grpc protobuf"
 
 # Testing, Development and Runtime
@@ -33,9 +33,12 @@ IMAGE_INSTALL:append = " \
 # Kaonic Applications
 IMAGE_INSTALL:append = " kaonic-init kaonic-comm kaonic-factory rns-mavlink"
 
+IMAGE_INSTALL:remove = "st-hostname"
+
 TOOLCHAIN_HOST_TASK += "\
     nativesdk-grpc \
     nativesdk-grpc-dev \
+    python3-cryptography \
 "
 
 TOOLCHAIN_TARGET_TASK += "protobuf-staticdev"
