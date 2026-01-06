@@ -30,6 +30,7 @@ RUN apt-get update && apt-get install -y \
             gdisk \
             rsync \
             bc \
+            libclang-dev \
             bsdmainutils \
             libegl1-mesa libgmp-dev libmpc-dev libsdl1.2-dev libssl-dev \
             gcc-arm-linux-gnueabihf \
