@@ -29,6 +29,7 @@ IMAGE_INSTALL:append = " \
     gstreamer1.0-python \
     gstreamer1.0-rtsp-server \
     iperf3 \
+    iptables \
 "
 
 # Kaonic Applications

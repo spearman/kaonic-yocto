@@ -1,6 +1,6 @@
 [Unit]
 Description=Kaonic Init Service
-Before=hostapd.service kanoic-commd.service
+Before=hostapd.service kaonic-commd.service
 After=local-fs.target
 
 [Service]
