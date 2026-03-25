@@ -16,8 +16,16 @@ IMAGE_FEATURES += "\
 IMAGE_INSTALL:append = " hostapd iw dnsmasq rsync"
 IMAGE_INSTALL:append = " grpc protobuf"
 
+# Audio
+IMAGE_INSTALL:append = " \
+    alsa-lib \
+    alsa-utils \
+    alsa-state \
+    alsa-plugins \
+"
+
 # Testing, Development and Runtime
-IMAGE_INSTALL:append = " spidev-test devmem2"
+IMAGE_INSTALL:append = " spidev-test devmem2 evtest sqlite3"
 IMAGE_INSTALL:append = " python3 python3-pip"
 IMAGE_INSTALL:append = " \
     x264 \
@@ -33,7 +41,7 @@ IMAGE_INSTALL:append = " \
 "
 
 # Kaonic Applications
-IMAGE_INSTALL:append = " kaonic-init kaonic-comm kaonic-factory rns-mavlink"
+IMAGE_INSTALL:append = " kaonic-init kaonic-comm rns-mavlink"
 
 IMAGE_INSTALL:remove = "st-hostname"
 
