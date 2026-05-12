@@ -5,6 +5,9 @@ include recipes-st/images/st-image.inc
 
 inherit core-image
 
+# Auto-load NEON-accelerated AES crypto modules at boot
+KERNEL_MODULE_AUTOLOAD += "aes-arm aes-arm-bs"
+
 ROOTFS_POSTPROCESS_COMMAND += "kaonic_install_alsa_state; "
 
 IMAGE_LINGUAS = "en-us"

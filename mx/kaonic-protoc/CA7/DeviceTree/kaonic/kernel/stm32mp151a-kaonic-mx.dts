@@ -1167,6 +1167,7 @@
 &hash1 {
 	clocks = <&scmi_clk CK_SCMI_HASH1>;
 	resets = <&scmi_reset RST_SCMI_HASH1>;
+	status = "okay";
 };
 
 &i2c4 {
