@@ -40,6 +40,7 @@ IMAGE_INSTALL:append = " \
     gstreamer1.0-python \
     gstreamer1.0-rtsp-server \
 "
+IMAGE_INSTALL:append = " valgrind"
 
 # Kaonic Applications
 IMAGE_INSTALL:append = " kaonic-init kaonic-comm kaonic-gateway"
